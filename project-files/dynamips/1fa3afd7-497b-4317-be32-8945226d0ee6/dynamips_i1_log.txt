@@ -1,0 +1,80 @@
+Nov 29 11:04:57.898 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 29 11:04:57.900 HYPERVISOR: Started on IP = localhost, TCP port = 56964.
+Nov 29 11:04:57.974 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 29 11:04:57.976 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips 
+Nov 29 11:04:57.983 GENERAL: working_dir=C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips
+Nov 29 11:04:57.983 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips\366d9ef6-30dd-430b-b090-5598460bde9b 
+Nov 29 11:04:57.984 GENERAL: working_dir=C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips\366d9ef6-30dd-430b-b090-5598460bde9b
+Nov 29 11:04:57.984 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Nov 29 11:04:57.987 VM: VM R1 created.
+Nov 29 11:04:57.988 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 29 11:04:57.988 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 29 11:04:57.988 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 29 11:04:57.989 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 29 11:04:57.989 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:04:57.990 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 29 11:04:57.991 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Nov 29 11:04:57.991 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 29 11:04:57.992 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 29 11:04:58.431 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:05:01.657 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:12:21.886 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:12:21.887 HYPERVISOR: exec_cmd: vm rename R1 BranchA 
+Nov 29 11:12:21.965 HYPERVISOR: exec_cmd: vm set_ios BranchA C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:13:50.475 HYPERVISOR: exec_cmd: vm set_ios BranchA C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:14:02.167 HYPERVISOR: exec_cmd: vm set_ios BranchA C:/Users/Ayaz Hussain/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Nov 29 11:16:09.198 HYPERVISOR: exec_cmd: nio create_udp udp-4c827ff2-4710-48b2-baad-1bb00aeef299 10002 127.0.0.1 10003 
+Nov 29 11:16:09.634 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BranchA 0 0 udp-4c827ff2-4710-48b2-baad-1bb00aeef299 
+Nov 29 11:16:09.635 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:22:29.496 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:22:29.499 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 11:22:35.893 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:22:35.895 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 11:22:49.101 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:22:49.102 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 11:24:03.193 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:24:03.194 HYPERVISOR: exec_cmd: vm slot_add_binding BranchA 1 0 PA-GE 
+Nov 29 11:24:03.195 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:24:03.195 HYPERVISOR: exec_cmd: vm slot_add_binding BranchA 2 0 PA-GE 
+Nov 29 11:24:03.196 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:24:03.196 HYPERVISOR: exec_cmd: vm slot_add_binding BranchA 3 0 PA-GE 
+Nov 29 11:24:03.197 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:24:03.197 HYPERVISOR: exec_cmd: vm slot_add_binding BranchA 4 0 PA-GE 
+Nov 29 11:25:03.503 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:25:03.503 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BranchA 0 0 
+Nov 29 11:25:03.505 HYPERVISOR: exec_cmd: nio delete udp-4c827ff2-4710-48b2-baad-1bb00aeef299 
+Nov 29 11:25:14.058 HYPERVISOR: exec_cmd: nio create_udp udp-e2d86b3c-56d7-4775-8032-589b285a5f0a 10002 127.0.0.1 10003 
+Nov 29 11:25:14.061 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BranchA 1 0 udp-e2d86b3c-56d7-4775-8032-589b285a5f0a 
+Nov 29 11:25:14.062 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:26:02.695 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:26:02.695 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BranchA 1 0 
+Nov 29 11:26:02.698 HYPERVISOR: exec_cmd: nio delete udp-e2d86b3c-56d7-4775-8032-589b285a5f0a 
+Nov 29 11:26:49.933 HYPERVISOR: exec_cmd: nio create_udp udp-56025edb-c78b-4c0a-99bd-63e1f0972633 10002 127.0.0.1 10003 
+Nov 29 11:26:49.937 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BranchA 1 0 udp-56025edb-c78b-4c0a-99bd-63e1f0972633 
+Nov 29 11:26:49.938 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:27:41.368 HYPERVISOR: exec_cmd: nio create_udp udp-e1696f64-ee90-44dc-9b19-e7f8d1a21d26 10006 127.0.0.1 10007 
+Nov 29 11:27:41.375 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BranchA 2 0 udp-e1696f64-ee90-44dc-9b19-e7f8d1a21d26 
+Nov 29 11:27:41.375 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:27:50.678 HYPERVISOR: exec_cmd: nio create_udp udp-a306149f-7d5d-4f0a-bc41-877911270ef7 10010 127.0.0.1 10011 
+Nov 29 11:27:50.681 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BranchA 0 0 udp-a306149f-7d5d-4f0a-bc41-877911270ef7 
+Nov 29 11:27:50.682 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:31:34.526 HYPERVISOR: exec_cmd: vm set_ghost_status BranchA 2 
+Nov 29 11:31:34.533 HYPERVISOR: exec_cmd: vm set_ghost_file BranchA C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Nov 29 11:31:34.533 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:31:34.543 HYPERVISOR: exec_cmd: vm set_config BranchA configs\i1_startup-config.cfg 
+Nov 29 11:31:34.544 HYPERVISOR: exec_cmd: vm start BranchA 
+Nov 29 11:32:05.040 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 11:34:52.412 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:34:52.413 HYPERVISOR: exec_cmd: vm stop BranchA 
+Nov 29 11:34:52.556 VM: VM BranchA shutdown.
+Nov 29 11:34:52.557 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 11:40:10.249 HYPERVISOR: exec_cmd: vm set_ghost_status BranchA 2 
+Nov 29 11:40:10.264 HYPERVISOR: exec_cmd: vm set_ghost_file BranchA C:\Users\Ayaz Hussain\GNS3\projects\CNGNS3\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Nov 29 11:40:10.264 HYPERVISOR: exec_cmd: vm get_status BranchA 
+Nov 29 11:40:10.280 HYPERVISOR: exec_cmd: vm set_config BranchA configs\i1_startup-config.cfg 
+Nov 29 11:40:10.280 HYPERVISOR: exec_cmd: vm start BranchA 
+Nov 29 11:41:10.682 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 12:00:41.044 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 12:03:11.094 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 12:21:11.281 HYPERVISOR: exec_cmd: vm extract_config BranchA 
+Nov 29 12:21:41.297 HYPERVISOR: exec_cmd: vm extract_config BranchA 
